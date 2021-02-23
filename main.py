@@ -85,7 +85,7 @@ def main():
 		display.set_pixel(2, x, 9)
 	# showing the people their game score and telling them how to restart
 	while wfNG:
-		display.show(str(15)) # snake.points 
+		display.show(str(snake.points))
 		if button_a.is_pressed():
 			# ressetting the game for a fresh one
 			wfNG = False
