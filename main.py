@@ -45,9 +45,10 @@ def main():
 	display.clear()
 	# starting a countdown to let people know when the game is starting
 	cd = 3
-	while cd < 0:
+	while cd > 0:
 		display.show(str(cd))
 		tsleep(1)
+		cd -= 1
 		display.clear()
 
 	# creating a reference time point to 
@@ -85,7 +86,7 @@ def main():
 		display.set_pixel(2, x, 9)
 	# showing the people their game score and telling them how to restart
 	while wfNG:
-		display.show(str(snake.points))
+		display.show(str(snake.points ))
 		if button_a.is_pressed():
 			# ressetting the game for a fresh one
 			wfNG = False
